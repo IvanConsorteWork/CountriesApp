@@ -1,0 +1,29 @@
+.country-card {
+    background: #1a1919;
+    padding: 1.2rem 1rem
+}
+
+.country-card img {
+    width: 100%
+}
+
+.country-title {
+    color: #fff;
+    padding: 1rem 0
+}
+
+.country-details p {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify
+}
+
+.country-details-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0
+}
+
+.country-details-btns .btn {
+    padding: 0.5rem 1rem
+}
