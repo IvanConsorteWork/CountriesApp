@@ -4,8 +4,6 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import CountriesContainer from '../components/CountriesContainer';
 
-
-
 const Home = () => {
   return (
     <div>

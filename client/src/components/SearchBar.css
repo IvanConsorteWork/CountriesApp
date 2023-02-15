@@ -1,0 +1,19 @@
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 1rem;
+    margin: auto;
+}
+
+.searchbar input {
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4
+}
+
+.searchbar .btn {
+    height: 100%;
+}

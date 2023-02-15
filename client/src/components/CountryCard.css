@@ -3,6 +3,14 @@
     padding: 1.2rem 1rem
 }
 
+.country-flag {
+    height: 70%
+}
+
+.country-details {
+    height: 30%
+}
+
 .country-card img {
     width: 100%
 }
@@ -12,18 +20,14 @@
     padding: 1rem 0
 }
 
+.country-details h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center
+}
+
 .country-details p {
     padding-bottom: 1rem;
     font-size: 1.1rem;
-    text-align: justify
-}
-
-.country-details-btns {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0
-}
-
-.country-details-btns .btn {
-    padding: 0.5rem 1rem
+    text-align: center
 }
