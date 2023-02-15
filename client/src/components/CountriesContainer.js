@@ -5,7 +5,6 @@ import { getAllActivities, getAllCountries, filterByActivity, filterByContinent,
 import CountryCard from './CountryCard';
 import Pagination from './Pagination';
 import SearchBar from './SearchBar';
-import WorkCardData from './WorkCardData';
 
 import './CountriesContainer.css';
 
