@@ -1,7 +1,8 @@
 .countries-heading {
     text-align: center;
-    padding: 4rem 0 2rem 0;
-    margin-bottom: 1.5rem
+    padding: 4rem 0 1rem 0;
+    margin-top: 1rem;
+    font-size: 3rem
 }
 
 .countries-container {
@@ -13,8 +14,21 @@
     padding-bottom: 5rem
 }
 
-.filters {
-    margin: auto
+.filters select {
+    margin-bottom: 4rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4
+}
+
+.filters option {
+    color: black
+}
+
+.refreshButton {
+    margin-bottom: 4rem
 }
 
 @media screen and (max-width: 640px) {

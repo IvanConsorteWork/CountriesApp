@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import HeroImgDetails from '../components/HeroImgDetails';
 import DetailsContent from '../components/DetailsContent';
 
-const Details = () => {
+const Details = () => {   
   return (
     <div>
       <NavBar />

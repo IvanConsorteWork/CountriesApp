@@ -82,7 +82,7 @@ const CountriesContainer = () => {
     }
 
     return (
-        <div>
+        <div className='home-container'>
             <h1 className='countries-heading'>Countries Database</h1>
 
             <SearchBar setCurrentPage = {setCurrentPage} /> 

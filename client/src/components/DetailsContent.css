@@ -1,50 +1,63 @@
-.details {
+.details-container {
     width: 100%;
     margin: 3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100%
+    height: 100%;
+    color: #eee
 }
 
-.details .left {
+.details-loading {
+    display: block;
+    margin: auto;
+    font-size: 5rem;
+}
+
+.btn-home {
+    display: inline-block;
+}
+
+.details-container .left {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    max-width: 350px;
+    background: #1a1919;
+    padding: 1.2rem 1rem
+}
+
+.details-container .right {
+    max-width: 700px;
     text-align: center;
     margin: auto;
     padding: 1rem;
     max-width: 350px
 }
 
-.details .left p {
-    margin: 1.2rem 0
+.details-container .left img {
+    height: 100%;
+    width: 100%;
 }
 
-.details .right {
-    max-width: 700px
+.details-container .left h1 {
+    margin: 1rem auto 1rem;
 }
 
-.right .img-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: relative;
-    align-items: center;
-    text-align: center
+.details-container .left h3 {
+    margin: 0.5rem auto 0.5rem;
 }
 
-.right .img {
-    max-width: 90%;
-    border: 1px solid #333
+.details-container .right {
+    background: #1a1919;
+    padding: 1.2rem 1rem
 }
 
-.right .img-stack-top {
-    grid-column: 1 / span 8;
-    grid-row: 1;
-    padding-top: 20%;
-    z-index: 6
+.details-container .right h1 {
+    margin: 1rem auto 1rem;
 }
 
-.right .img-stack-bottom {
-    grid-column: 4 / -1;
-    grid-row: 1;
-    z-index: 5
+.details-container .right h3 {
+    margin: 0.5rem auto 0.5rem;
 }

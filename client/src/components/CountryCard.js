@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const CountryCard = (props) => {
   return (
     <div className='country-card'>
-        <NavLink to = {`/home/${props.id}`}>
+        <NavLink to = {`/details/${props.id}`}>
             <div className='country-flag'>
                 <img src={props.flag} alt='country-preview'/>
             </div>                    
