@@ -124,7 +124,7 @@ const CountriesContainer = () => {
 
 
             <div className='countries-container'>
-                {currentCountries && currentCountries?.map((c) => {
+                {currentCountries ? currentCountries.map((c) => {
                         return (
                             <CountryCard
                             id = {c.id}
@@ -133,7 +133,8 @@ const CountriesContainer = () => {
                             flag = {c.flag}
                             continent = {c.continent}/>
                         )
-                    })
+                    }) :
+                    <p className='countries-loading'>Loading...</p>
                 }
             </div>
 

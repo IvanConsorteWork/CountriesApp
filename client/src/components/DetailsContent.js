@@ -37,8 +37,9 @@ const DetailsContent = () => {
                 return ""
             }
         } catch (e) {
-            alert('Country not Found');
-            navigate('/404')
+            // alert('Country not Found');
+            // navigate('/404')
+            console.log(e)
         }
     }
 
