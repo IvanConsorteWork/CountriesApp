@@ -7,9 +7,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import axios from 'axios';
 
-// const API_URL = process.env.REACT_APP_API;
-
-axios.defaults.baseURL = "https://countriesapp-production-903b.up.railway.app" || "http://localhost:3001"
+axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL || "http://localhost:3001"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
