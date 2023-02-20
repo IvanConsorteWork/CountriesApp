@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import CountriesContainer from '../components/CountriesContainer';
 
 const Home = () => {
+  console.log(process.env.REACT_APP_API_BASE_URL)
   return (
     <div>
       <NavBar/>
