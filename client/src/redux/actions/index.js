@@ -13,10 +13,10 @@ export const SORT_BY_POPULATION = "SORT_BY_POPULATION";
 
 export function getAllCountries() {
   return async function (dispatch) {
-    var json = await axios.get("/countries");
+    var response = await axios.get("/countries");
     return dispatch({
       type: GET_ALL_COUNTRIES,
-      payload: json.data,
+      payload: response.data,
     });
   };
 }
@@ -24,10 +24,10 @@ export function getAllCountries() {
 export function getCountryByName(name){
   return async function (dispatch){
     try {
-      var json=await axios.get(`/countries?name=${name}`)
+      var response = await axios.get(`/countries?name=${name}`)
       return dispatch({
         type: GET_COUNTRY_BY_NAME,
-        payload: json.data
+        payload: response.data
       })
     } catch (error) {
       alert('Country not found')
@@ -38,10 +38,10 @@ export function getCountryByName(name){
 export function getCountryDetails(id){
   return async function(dispatch){
     try {
-      var json=await axios.get(`/countries/${id}`)  
+      var response = await axios.get(`/countries/${id}`)  
       return dispatch({
         type: GET_COUNTRY_DETAILS,
-        payload: json.data
+        payload: response.data
       })
     } catch (error) {
       console.log(error)
@@ -69,10 +69,10 @@ export const createActivity = (payload) => {
 
 export function getAllActivities(){
   return async function (dispatch){
-      var json=await axios.get(`/activities`)
+      var response = await axios.get(`/activities`)
       return dispatch({
         type: GET_ALL_ACTIVITIES,
-        payload: json.data
+        payload: response.data
       });
   }
 } 
