@@ -28,7 +28,7 @@ const Form = () => {
             errors.name = "*Activity name required*";
         }
 
-        if(input.name.length < 3 || input.name.length > 15) {
+        if (input.name.trim().length < 3 || input.name.trim().length > 15) {
             errors.name = "*Invalid activity name*";
         }
 
