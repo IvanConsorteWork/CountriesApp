@@ -12,7 +12,7 @@ const LandingContent = () => {
             <img className="intro-img" src={introImg} alt="background"/>
         </div>
         <div className="content">
-            <p>Are you ready for discover</p>
+            <p>Are you ready to discover</p>
             <h1>The World?</h1>
             <div>
                 <Link to="/home" className='btn'>Enter Here</Link>
