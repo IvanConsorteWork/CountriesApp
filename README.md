@@ -1,4 +1,4 @@
-# Countries App
+# Terralog
 
 <p align="left">
   <img height="200" src="./countries.png" />
