@@ -24,7 +24,7 @@ const NavBar = () => {
     return (
         <div className={color ? 'nav-header nav-header-bg' : 'nav-header'}>
             <Link to='/home'>
-                <h1>My Henry's Countries App</h1>
+                <h1>Terrabook</h1>
             </Link>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li>

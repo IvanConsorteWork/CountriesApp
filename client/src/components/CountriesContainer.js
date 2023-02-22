@@ -85,9 +85,9 @@ const CountriesContainer = () => {
         <div className='home-container'>
             <h1 className='countries-heading'>Countries Database</h1>
 
-            <SearchBar setCurrentPage = {setCurrentPage} /> 
+            <SearchBar className='countries-search' setCurrentPage = {setCurrentPage} /> 
 
-            <div className = 'filters'>
+            <div className = 'countries-filters'>
                     <select onChange = {e => handleFilterByActivity(e)}>
                         <option key = "all" value = "all">Select Activity</option>
                         {allActivities?.map((a) => {

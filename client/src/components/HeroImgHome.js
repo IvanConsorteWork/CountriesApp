@@ -9,7 +9,7 @@ const HeroImgHome = () => {
             <img className="intro-img" src={introImg} alt="background"/>
         </div>
         <div className="content">
-            <h1>MY HENRY'S COUNTRIES APP</h1>
+            <h1>Terrabook</h1>
             <p>A React-powered responsive site for all your countries's data inquiries</p>
         </div>
     </div>
