@@ -21,9 +21,10 @@ ul {
 }
 
 .btn {
-  padding: 12px 32px;
+  padding: 0.75rem 2rem;
   font-size: 1rem;
   text-transform: uppercase;
+  text-align: center;
   background: rgb(248, 217, 15);
   color: #222;
   border: 1px solid #fff;
@@ -42,3 +43,8 @@ ul {
   transition: 0.3s
 }
 
+@media screen and (max-width: 640px) {
+  .btn {
+    font-size: 0.8rem
+  }
+}

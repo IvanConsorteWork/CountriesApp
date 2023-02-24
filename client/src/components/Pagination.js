@@ -1,8 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Pagination.css';
 
 const Pagination = ({ totalPages, paginate, setCurrentPage, currentPage }) => {
-    const maxNumbers = 9;
+    const [maxNumbers, setMaxNumbers] = useState(9);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 600) {
+                setMaxNumbers(3);
+            } else {
+                setMaxNumbers(9);
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     let pages = [];
     for (let i = 1; i <= totalPages; i++) {
         pages.push(i);

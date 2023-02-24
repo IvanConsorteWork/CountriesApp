@@ -89,7 +89,8 @@ const CountriesContainer = () => {
 
             <div className = 'countries-filters'>
                     <select onChange = {e => handleFilterByActivity(e)}>
-                        <option key = "all" value = "all">Select Activity</option>
+                        <option key = "all" value = "all" disabled>Filter by Activity</option>
+                        <option key = "all" value = "all">All Activities</option>
                         {allActivities?.map((a) => {
                             return (
                                 <option key={a.name} value = {a.name}>{a.name}</option>
@@ -98,7 +99,8 @@ const CountriesContainer = () => {
                     </select>
 
                     <select onChange = {e => handleFilterByContinent(e)} >
-                        <option value = "All">Select Continent</option>
+                        <option value = "All" disabled>Filter by Continent</option>
+                        <option value = "All">All Continents</option>
                         <option value = "Asia">Asia</option>
                         <option value = "South America">South America</option>
                         <option value = "North America">North America</option>

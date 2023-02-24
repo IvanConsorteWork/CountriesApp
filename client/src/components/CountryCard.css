@@ -1,6 +1,6 @@
 .country-card {
     background: #1a1919;
-    padding: 1.2rem 1rem
+    padding: 1.2rem 1rem;
 }
 
 .country-flag {
@@ -12,7 +12,7 @@
 }
 
 .country-card img {
-    width: 100%
+    max-width: 100%;
 }
 
 .country-title {
@@ -33,6 +33,10 @@
 }
 
 @media screen and (max-width: 640px) {
+    .country-card {
+        height: 90%;
+        width: 90%
+    }
     .country-details {
         margin-bottom: 3rem;
     }

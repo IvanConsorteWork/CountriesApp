@@ -1,56 +1,73 @@
 .home-container {
     display: grid;
     place-items: center;
-}
-
+  }
+  
 .countries-heading {
-    text-align: center;
-    padding: 4rem 0 1rem 0;
-    margin-top: 1rem;
-    font-size: 3rem
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0;
+  padding: 4rem 0 1rem 0;
 }
 
 .countries-container {
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    padding-bottom: 5rem
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  padding-bottom: 5rem;
 }
 
 .countries-loading {
-    display: block;
-    margin: auto;
-    font-size: 5rem;
+  display: block;
+  margin: auto;
+  font-size: 5rem;
+}
+
+.countries-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
 .countries-filters select {
-    margin-bottom: 4rem;
-    padding: 10px 18px;
-    font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.1);
-    color: #f4f4f4
+  display: block;
+  margin: 0 0 1rem;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f4f4f4;
+  text-align: center;
 }
 
 .countries-filters option {
-    color: black
+  color: black;
 }
 
 .refreshButton {
-    margin-bottom: 4rem
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 640px) {
-    .countries-container {
-        max-width: 90%;
-        margin: auto;
-        grid-template-columns: 1fr
-    }
+  .countries-container {
+    max-width: 90%;
+    grid-template-columns: 1fr;
+    margin-right: 0
+  }
 
-    .countries-filters {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .countries-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .countries-filters select {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
 }
+
+
