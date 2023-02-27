@@ -29,8 +29,8 @@
 
 .hamburger {
     display: none;
-  }
-  
+}
+
 @media screen and (max-width: 1040px) {
     .nav-menu {
         flex-direction: column; 

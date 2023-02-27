@@ -23,8 +23,8 @@ const NavBar = () => {
 
     return (
         <div className={color ? 'nav-header nav-header-bg' : 'nav-header'}>
-            <Link to='/home'>
-                <h1>Terralog</h1>
+            <Link to='/home'>            
+            <h1>Terralog</h1>
             </Link>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <li>
