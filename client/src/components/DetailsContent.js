@@ -31,7 +31,7 @@ const DetailsContent = () => {
         try {
             if (myCountry.activities.length) {
                 return (
-                    <h1>Activities</h1>
+                    <h1 className='activity-heading'>Activities</h1>
                 )
             } else {
                 return ""
@@ -48,8 +48,8 @@ const DetailsContent = () => {
             {
                 countryLoad ?
                 <p className='details-loading'>Loading...</p> :                 
-                <div className='details-container'>                    
-                    <div className = 'left'>
+                <div className='details-container'> 
+                    <div className='details-card'>                
                         <div className = 'country-flag'>
                             <img src = {myCountry.flag} alt="country flag"/>
                         </div>
@@ -59,20 +59,23 @@ const DetailsContent = () => {
                             <h3>Subregion: {myCountry.subregion}</h3>                           
                             <h3>Area: {myCountry.area}</h3>
                             <h3>Population: {myCountry.population}</h3>
-                        </div>                         
-                    </div> 
-                    <div className = 'right'>
-                            {checkActivities()}
-                            {myCountry.activities?.map(e => <div key={e}>
-                                <ul>
-                                    <li>Name: {e.name}</li>
-                                    <li>Difficulty: {e.difficulty}</li>
-                                    <li>Duration: {e.duration}</li>
-                                    <li>Season: {e.season}</li>
-                                </ul>
-                            </div>
-                            )}
-                    </div>                
+                        </div>    
+                    </div>                     
+                    {checkActivities()}
+                    {myCountry.activities ? 
+                    <div className = 'activity-container'>                            
+                    {myCountry.activities?.map(e => <div key={e} className='activity-card'>
+                        <ul>
+                            <li>Name: {e.name}</li>
+                            <li>Difficulty: {e.difficulty}</li>
+                            <li>Duration: {e.duration}</li>
+                            <li>Season: {e.season}</li>
+                        </ul>
+                    </div>
+                    )}
+                    </div> : 
+                    ""
+                    }                                   
                 </div>                
             }                        
             <NavLink to = '/home' className = 'btn btn-home'>Back to Home</NavLink>                       
