@@ -1,12 +1,8 @@
 .details-container {
+    display: grid;
+    place-items: center;
     max-width: 100%;
-    margin: 3rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: space-around;
-    flex-wrap: wrap;
+    margin: 3rem 0 0;    
     max-height: 100%;
     color: #eee
 }
@@ -18,7 +14,9 @@
 }
 
 .btn-home {
-    display: inline-block;
+    display: flex;
+    width: 12rem;
+    margin: auto auto 4rem;
 }
 
 .details-container .details-card {
@@ -36,10 +34,8 @@
 }
 
 .details-container .details-card .country-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 10rem
+    margin-right: 10rem;
+    text-align: left;
 }
 
 .details-container .details-card h1 {
@@ -47,7 +43,7 @@
 }
 
 .details-container .details-card h3 {
-    margin: 0.5rem auto 0.5rem;
+    margin: 1rem auto 1rem;
 }
 
 .details-container .activity-heading {
@@ -78,4 +74,25 @@
 
 .details-container .activity-container h3 {
     margin: 0.5rem auto 0.5rem;
+}
+
+@media screen and (max-width: 640px) {
+    .details-container .details-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        background: #1a1919;
+    }
+    .details-container .details-card .country-details {
+        margin-right: 0;
+        margin-bottom: 0
+    }
+    .details-container .activity-container {
+        max-width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .btn-home {
+        width: 10.5rem;
+    }
 }

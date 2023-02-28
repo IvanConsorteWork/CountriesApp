@@ -77,8 +77,10 @@ const DetailsContent = () => {
                     ""
                     }                                   
                 </div>                
-            }                        
-            <NavLink to = '/home' className = 'btn btn-home'>Back to Home</NavLink>                       
+            }   
+            <div className='homeButton'>
+                <NavLink to = '/home' className = 'btn btn-home'>Back to Home</NavLink>   
+            </div>                               
         </div>
     )
 }
