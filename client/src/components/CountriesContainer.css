@@ -19,10 +19,13 @@
   padding-bottom: 5rem;
 }
 
-.countries-loading {
-  display: block;
-  margin: auto;
-  font-size: 5rem;
+.loading-container {
+  margin-bottom: 10vh
+}
+
+.loading-container img {
+  height: 50vh;
+  width: 80vh
 }
 
 .countries-filters {
@@ -67,6 +70,11 @@
   .countries-filters select {
     margin-bottom: 1rem;
     font-size: 0.9rem;
+  }
+
+  .loading-container img {
+    height: 30vh;
+    width: 45vh
   }
 }
 
