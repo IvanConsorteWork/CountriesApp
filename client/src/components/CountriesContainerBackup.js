@@ -126,8 +126,8 @@ const CountriesContainer = () => {
                 </div>
 
 
-                <div className='countries-container'>
-                {currentCountries ? currentCountries.map((c) => {
+            <div className={currentCountries.lenght > 0 ? 'countries-container' : 'loading-container'}>
+                {currentCountries.lenght > 0 ? currentCountries.map((c) => {
                         return (
                             <CountryCard
                             id = {c.id}
@@ -136,8 +136,8 @@ const CountriesContainer = () => {
                             flag = {c.flag}
                             continent = {c.continent}/>
                         )
-                    }) :
-                    <p className='countries-loading'>Loading...</p>
+                    }) :                    
+                        <img src={loadingGif} alt='not-found' />                     
                 }
             </div>
 
