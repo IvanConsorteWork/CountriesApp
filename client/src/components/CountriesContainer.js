@@ -14,10 +14,10 @@ const CountriesContainer = () => {
 
     // - - - - - - STATE - - - - - - 
 
-    // useEffect(() => {
-    //     dispatch(getAllActivities());
-    //     dispatch(getAllCountries())
-    // }, [dispatch])
+    useEffect(() => {
+        dispatch(getAllActivities());
+        dispatch(getAllCountries())
+    }, [dispatch])
 
     const allActivities = useSelector((state) => state.activities);
     const allCountries = useSelector((state) => state.allCountries);
