@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { getAllActivities, getAllCountries } from '../redux/actions';
+import { getAllActivities, getAllCountries } from './redux/actions';
 
 import "./index.css";
 
