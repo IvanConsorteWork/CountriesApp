@@ -1,7 +1,5 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { getAllActivities, getAllCountries } from './redux/actions';
 
 import "./index.css";
 
@@ -13,11 +11,6 @@ import Landing from "./routes/Landing";
 import NotFound from "./routes/NotFound";
 
 function App() {
-  const dispatch = useDispatch();
-    useEffect(() => {
-      dispatch(getAllActivities());
-      dispatch(getAllCountries())
-  }, [dispatch])
   return (
     <>
       <Routes>
