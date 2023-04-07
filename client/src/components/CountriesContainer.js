@@ -6,7 +6,6 @@ import CountryCard from './CountryCard';
 import Pagination from './Pagination';
 import SearchBar from './SearchBar';
 
-import loadingGif from '../assets/Loading2.gif'
 import './CountriesContainer.css';
 
 const CountriesContainer = () => {
@@ -15,10 +14,10 @@ const CountriesContainer = () => {
 
     // - - - - - - STATE - - - - - - 
 
-    useEffect(() => {
-        dispatch(getAllActivities());
-        dispatch(getAllCountries())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(getAllActivities());
+    //     dispatch(getAllCountries())
+    // }, [dispatch])
 
     const allActivities = useSelector((state) => state.activities);
     const allCountries = useSelector((state) => state.allCountries);
