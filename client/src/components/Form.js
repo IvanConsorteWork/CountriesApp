@@ -194,7 +194,7 @@ const Form = () => {
                 {input.relatedCountries.map(c =>
                     <div key = {c}>
                         <p>{c}</p>
-                        <button classname='btn' onClick = {() => handleDelete(c)}>X</button>
+                        <button onClick = {() => handleDelete(c)}>X</button>
                     </div>
                 )}         
             </div>            

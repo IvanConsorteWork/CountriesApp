@@ -1,7 +1,7 @@
 .country-card {
     background: #1a1919;
-    height: 55vh;
-    width: 25vw;
+    height: 350px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3vh
+    margin-bottom: 20px
 }
 
 .country-details {
@@ -25,8 +25,8 @@
 }
 
 .country-card img {
-    height: 30vh;
-    width: 20vw;
+    height: 200px;
+    width: 300px;
     object-fit: cover;
 }
 
@@ -42,16 +42,4 @@
 .country-details p {
     font-size: 1.1rem;
     text-align: center
-}
-
-@media screen and (max-width: 640px) {
-    .country-card {
-        height: 55vh;
-        width: 100%;
-    }
-    .country-card img {
-        height: 30vh;
-        width: 60vw;
-        margin-top: 3vh;
-    }
 }

@@ -12,7 +12,16 @@ form {
     max-width: 600px
 }
 
-form input, form select {
+form input {
+    margin-bottom: 2rem;
+    padding: 5px 18px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #f4f4f4
+}
+
+form select {
     margin-bottom: 2rem;
     padding: 10px 18px;
     font-size: 1.2rem;
