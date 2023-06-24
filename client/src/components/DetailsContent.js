@@ -31,7 +31,7 @@ const DetailsContent = () => {
         try {
             if (myCountry.activities.length) {
                 return (
-                    <h1 className='activity-heading'>Activities</h1>
+                    <h1 id='activity-heading'>Activities</h1>
                 )
             } else {
                 return ""
@@ -44,16 +44,16 @@ const DetailsContent = () => {
     }
 
     return (
-            <div>
+            <div id='details'>
             {
                 countryLoad ?
-                <p className='details-loading'>Loading...</p> :                 
-                <div className='details-container'> 
-                    <div className='details-card'>                
-                        <div className = 'country-flag'>
+                <p id='details-loading'>Loading...</p> :                 
+                <div id='details-container'> 
+                    <div id='details-card'>                
+                        <div id = 'details-flag'>
                             <img src = {myCountry.flag} alt="country flag"/>
                         </div>
-                        <div className = 'country-details'>                   
+                        <div id = 'details-description'>                   
                             <h1>{myCountry.name}</h1>
                             <h3>Capital: {myCountry.capital}</h3>
                             <h3>Subregion: {myCountry.subregion}</h3>                           
@@ -63,10 +63,10 @@ const DetailsContent = () => {
                     </div>                     
                     {checkActivities()}
                     {myCountry.activities ? 
-                    <div className = 'activity-container'>                            
+                    <div id = 'activity-container'>                            
                     {myCountry.activities?.map(e => <div key={e} className='activity-card'>
+                        <h2>{e.name}</h2>
                         <ul>
-                            <li>Name: {e.name}</li>
                             <li>Difficulty: {e.difficulty}</li>
                             <li>Duration: {e.duration}</li>
                             <li>Season: {e.season}</li>
@@ -78,7 +78,7 @@ const DetailsContent = () => {
                     }                                   
                 </div>                
             }   
-            <div className='homeButton'>
+            <div id='homeButton'>
                 <NavLink to = '/home' className = 'btn btn-home'>Back to Home</NavLink>   
             </div>                               
         </div>

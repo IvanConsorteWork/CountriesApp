@@ -83,13 +83,12 @@ const CountriesContainer = () => {
 
     return (
         <div className='home-container'>
-            <h1 className='countries-heading'>Countries Database</h1>
 
             <SearchBar className='countries-search' setCurrentPage = {setCurrentPage} /> 
 
             <div className = 'countries-filters'>
                     <select onChange = {e => handleFilterByActivity(e)}>
-                        <option key = "all" value = "all" disabled>Filter by Activity</option>
+                        <option key = "default" value = "all" disabled>Filter by Activity</option>
                         <option key = "all" value = "all">All Activities</option>
                         {allActivities?.map((a) => {
                             return (
@@ -99,15 +98,15 @@ const CountriesContainer = () => {
                     </select>
 
                     <select onChange = {e => handleFilterByContinent(e)} >
-                        <option value = "All" disabled>Filter by Continent</option>
-                        <option value = "All">All Continents</option>
-                        <option value = "Asia">Asia</option>
-                        <option value = "South America">South America</option>
-                        <option value = "North America">North America</option>
-                        <option value = "Europe">Europe</option>
-                        <option value = "Oceania">Oceania</option>
-                        <option value = "Antarctica">Antarctica</option>
-                        <option value = "Africa">Africa</option>
+                        <option key = "default" value = "All" disabled>Filter by Continent</option>
+                        <option key = "all" value = "All">All Continents</option>
+                        <option key = "Asia" value = "Asia">Asia</option>
+                        <option key = "South America" value = "South America">South America</option>
+                        <option key = "North America" value = "North America">North America</option>
+                        <option key = "Europe" value = "Europe">Europe</option>
+                        <option key = "Oceania" value = "Oceania">Oceania</option>
+                        <option key = "Antarctica" value = "Antarctica">Antarctica</option>
+                        <option key = "Africa" value = "Africa">Africa</option>
                     </select>
 
                     <select defaultValue = {"default"} onChange={(e) => handleSortByName(e)}>

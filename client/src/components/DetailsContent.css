@@ -1,97 +1,106 @@
-.details-container {
-    display: grid;
-    place-items: center;
-    max-width: 100%;
-    margin: 3rem 0 0;    
-    max-height: 100%;
-    color: #eee
+#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh auto;
+    min-height: 50vh;
 }
 
-.details-loading {
+#details-loading {
     display: block;
     margin: auto;
     font-size: 5rem;
 }
 
-.btn-home {
-    display: flex;
-    width: 12rem;
-    margin: auto auto 4rem;
-}
-
-.details-container .details-card {
+#details-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 80%;
+    flex-direction: column;
+    color: #eee;
+}
+
+#details-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55vh;
+    width: 80vw;
     background: #1a1919;
-    padding: 1.2rem 1rem;
 }
 
-.details-container .details-card img {
-    max-height: 70%;
-    max-width: 70%;
+#details-flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.details-container .details-card .country-details {
-    margin-right: 10rem;
-    text-align: left;
+#details-flag > img {
+    height: 40vh;
+    width: 35vw;
+    object-fit: cover;
 }
 
-.details-container .details-card h1 {
-    margin: 1rem auto 1rem;
+#details-description {
+    text-align: center;
+    width: 30vw;
 }
 
-.details-container .details-card h3 {
-    margin: 1rem auto 1rem;
-}
-
-.details-container .activity-heading {
+#activity-heading {
     display: block;
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 3rem;
-    padding: 4rem 0 1rem 0;
 }
 
-.details-container .activity-container {
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 40px;
-    padding-bottom: 5rem;
+#activity-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    gap: 5vw;
 }
 
-.details-container .activity-container .activity-card {
+.activity-card {
     background: #1a1919;
-    padding: 1.2rem 1rem;
+    height: 30vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.details-container .activity-container h1 {
-    margin: 1rem auto 1rem;
+.btn-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    margin-top: 10vh;
 }
 
-.details-container .activity-container h3 {
-    margin: 0.5rem auto 0.5rem;
-}
-
-@media screen and (max-width: 640px) {
-    .details-container .details-card {
-        display: flex;
+@media screen and (max-width: 640px) {    
+    #details-card {
+        height: 100vw;
+        width: 80vh;
         flex-direction: column;
-        text-align: center;
-        width: 80%;
         background: #1a1919;
     }
-    .details-container .details-card .country-details {
-        margin-right: 0;
-        margin-bottom: 0
+
+    #details-flag > img {
+        width: 80vw;
     }
-    .details-container .activity-container {
-        max-width: 90%;
-        grid-template-columns: 1fr;
+
+    #details-description {
+        font-size: 0.9rem;
     }
+
+    .activity-card {
+        height: 40vh;
+        width: 60vw
+    }
+
     .btn-home {
         width: 10.5rem;
     }

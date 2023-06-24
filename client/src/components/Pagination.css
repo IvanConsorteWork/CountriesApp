@@ -2,8 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
 }
 
 .pagination button {
@@ -28,8 +26,8 @@
     color: #101010
 }
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
     .pagination button {
         margin-bottom: 2.5rem;
     }
-}
+} */
