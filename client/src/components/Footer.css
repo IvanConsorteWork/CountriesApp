@@ -1,19 +1,28 @@
 #footer {
 	background-color: rgba(19, 19, 19, 0.8);
 	min-height: 75px;
-	width: 100vw;    
+	width: 100%;    
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
-	flex-wrap: wrap
 }
 
 #footer-content {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 100vw;
+	flex-wrap: wrap;
+	width: 100%;
 	font-size: 1.2rem;
 }
+
+#footer-content > p {
+	text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+	#footer-content {
+		flex-direction: column;
+	}	
+}
+
 

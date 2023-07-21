@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     margin: 10vh auto;
-    min-height: 50vh;
+    width: 90vw;
 }
 
 #details-loading {
@@ -25,8 +25,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 55vh;
-    width: 80vw;
+    padding: 10vh 5vw;
     background: #1a1919;
 }
 
@@ -44,7 +43,6 @@
 
 #details-description {
     text-align: center;
-    width: 30vw;
 }
 
 #activity-heading {
@@ -80,10 +78,8 @@
     margin-top: 10vh;
 }
 
-@media screen and (max-width: 640px) {    
+@media screen and (max-width: 640px) { 
     #details-card {
-        height: 100vw;
-        width: 80vh;
         flex-direction: column;
         background: #1a1919;
     }
