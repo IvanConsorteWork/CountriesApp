@@ -43,7 +43,7 @@ ul {
   transition: 0.3s
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   .btn {
     font-size: 0.8rem
   }

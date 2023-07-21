@@ -8,13 +8,14 @@ const AboutContent = () => {
   return (
     <div className='about'>
         <div className='left'>
-            <h1>Hi, there! I'm Ivan Consorte</h1>
-            <p>An aspiring web developer with a deep enthusiasm and quick learning skills. Recently, I pivoted my career from teaching music on schools to website design due to my curiosity for developing technologies and a desire for something new and exciting.
-
-            Currently, I focus on learn about developing responsive E-Commerce sites, applying all I learn on my time in the Henry's Bootcamp. I typically use React/Redux in the client and Express (Node.js), PosgresSQL and Sequelize in the database and server. </p>
-            <Link to='#'>
-                <button className='btn'>Let's get in touch!</button>
-            </Link>
+            <h1>Hi, I'm Ivan Consorte, nice to meet you!</h1>
+            <p>As a Front-End Developer with a keen eye for developing and upgrading web features, I'm passionate about incorporating tech and design to create top-notch applications. </p>
+            <p>My x-factor is emphathy, I always visualice myself as the final consumer of my product, as a way to develop the best user experience. You can be sure that my products are carefully taylored to your needs. </p>
+            <div className='left-link'>
+                <Link to='https://portfolio-ivan-consorte.vercel.app/'>
+                    <button className='btn'>Let's get in touch!</button>
+                </Link>
+            </div>
         </div>
 
         <div className='right'>

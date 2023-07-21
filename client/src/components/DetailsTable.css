@@ -1,0 +1,18 @@
+#details-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+#details-table > table {
+  border-collapse: collapse;
+  border-width: 2px;
+  border-style: solid;
+  width: 100%
+}
+
+#details-table > table > td {
+  border-width: 2px;
+  border-style: solid;
+  padding: 5px;
+}

@@ -23,10 +23,10 @@
 
 #details-card {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 10vh 5vw;
     background: #1a1919;
+    gap: 10vw;    
+    padding: 5vh 5vw
 }
 
 #details-flag {
@@ -36,38 +36,47 @@
 }
 
 #details-flag > img {
-    height: 40vh;
-    width: 35vw;
+    height: 275px;
+    width: 400px;
     object-fit: cover;
 }
 
 #details-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
     text-align: center;
+    position: relative;
+    bottom: 3vh;
+    width: 30vw;
 }
 
 #activity-heading {
     display: block;
     text-align: center;
     font-size: 3rem;
+    margin: 5vh 0
 }
 
 #activity-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     max-width: 80vw;
-    gap: 5vw;
+    gap: 4rem
 }
 
 .activity-card {
     background: #1a1919;
-    height: 30vh;
-    width: 20vw;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+}
+
+.activity-card > h2 {
+  padding-bottom: .5rem
 }
 
 .btn-home {
@@ -78,23 +87,26 @@
     margin-top: 10vh;
 }
 
-@media screen and (max-width: 640px) { 
+@media screen and (max-width: 600px) { 
+    #details-flag > img {
+        height: 180px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 800px) { 
     #details-card {
         flex-direction: column;
         background: #1a1919;
     }
 
-    #details-flag > img {
-        width: 80vw;
-    }
-
     #details-description {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        width: 100%;
     }
 
     .activity-card {
-        height: 40vh;
-        width: 60vw
+        padding: 3vh 4vw;
     }
 
     .btn-home {

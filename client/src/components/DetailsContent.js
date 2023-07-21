@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
 import { getCountryDetails } from '../redux/actions';
+import DetailsTable from './DetailsTable';
 import './DetailsContent.css';
 
 const DetailsContent = () => {
@@ -55,11 +56,8 @@ const DetailsContent = () => {
                         </div>
                         <div id = 'details-description'>                   
                             <h1>{myCountry.name}</h1>
-                            <h3>Capital: {myCountry.capital}</h3>
-                            <h3>Subregion: {myCountry.subregion}</h3>                           
-                            <h3>Area: {myCountry.area}</h3>
-                            <h3>Population: {myCountry.population}</h3>
-                        </div>    
+                            <DetailsTable />
+                        </div>                            
                     </div>                     
                     {checkActivities()}
                     {myCountry.activities ? 
