@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutContent.css';
 import { Link } from 'react-router-dom';
-import React1 from '../assets/React1.jpg';
-import Node1 from '../assets/Node1.jpg';
+import becomingFit from '../assets/becomingv2-1.png'
+import terralog from '../assets/terralog3.png'
 
 const AboutContent = () => {
   return (
@@ -21,10 +21,10 @@ const AboutContent = () => {
         <div className='right'>
             <div className='img-container'>
                 <div className='img-stack-top'>
-                    <img src={React1} alt='reactImg' className='img'/>
+                    <img src={becomingFit} alt='becoming-fit screen' className='img'/>
                 </div>
                 <div className='img-stack-bottom'>
-                    <img src={Node1} alt='reactImg2' className='img'/>
+                    <img src={terralog} alt='terralog screen' className='img'/>
                 </div>
             </div>
         </div>
